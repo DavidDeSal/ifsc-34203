@@ -97,3 +97,11 @@ h3 {
 h4 {
   color: blueviolet;
 }
+.hover_link:hover {
+  background-color: yellow;
+}
+.content-image {
+  float: right;
+  border: 2px solid #fff;
+  margin: 10px 10px 10px 10px;
+}
