@@ -88,6 +88,12 @@ body {
   background-color: #222;
 }
 
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  body {
+    color: black;
+    background-color: red;
+  }
+}
 
 /* ==========================================================================
    Helper classes
