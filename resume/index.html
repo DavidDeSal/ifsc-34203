@@ -1,11 +1,19 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="David DeSalvo" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
 <header class="container" id="top">
   <!-- Main navigation -->
   <nav class="primary">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
     </ul>
   </nav>
 </header>
@@ -15,19 +23,22 @@
   <h1 class="page-title" itemprop="name">David Tyler DeSalvo</h1>
 
   <section id="about">
-    <h2>Personal Details</h2>
+    <h2 class="visuallyhidden">Personal Details</h2>
 
     <div class="bio">
-      <img itemprop="image" src="https://placehold.co/600x600?text=Headshot" alt="Your Name">
       <p itemprop="description">
-        I am Computer Science senior at the University of Arkansas at Little Rock with a 3.9 GPA, building strong skills in full-stack software development. I previously earned an associate degree in Technology & Engineering from UA–Pulaski Tech with a 4.0 GPA. 
+        I am Computer Science senior at the University of Arkansas at Little
+        Rock with a 3.9 GPA, building strong skills in full-stack software
+        development. I previously earned an associate degree in Technology &
+        Engineering from UA-Pulaski Tech with a 4.0 GPA.
       </p>
     </div>
 
     <dl class="details">
       <dt>Name</dt>
       <dd itemprop="name">
-        <span itemprop="givenName">David</span> <span itemprop="familyName">DeSalvo</span>
+        <span itemprop="givenName">David</span>
+        <span itemprop="familyName">DeSalvo</span>
       </dd>
 
       <dt>Date of birth</dt>
@@ -50,11 +61,17 @@
 
       <dt>Email</dt>
       <dd>
-        <a itemprop="email" href="mailto:ddesalvo@ualr.edu">ddesalvo@ualr.edu</a>
+        <a itemprop="email" href="mailto:ddesalvo@ualr.edu"
+          >ddesalvo@ualr.edu</a
+        >
       </dd>
 
       <dt>Address</dt>
-      <dd itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <dd
+        itemprop="address"
+        itemscope
+        itemtype="https://schema.org/PostalAddress"
+      >
         <span itemprop="streetAddress">17744 Clear Water Dr.</span>
         <span itemprop="addressLocality">Little Rock</span>
         <span itemprop="postalCode">72065</span>
@@ -63,7 +80,11 @@
     </dl>
 
     <ul class="related-links">
-      <li><a itemprop="sameAs" rel="me" href="https://github.com/DavidDeSal"> github</a></li>
+      <li>
+        <a itemprop="sameAs" rel="me" href="https://github.com/DavidDeSal">
+          github</a
+        >
+      </li>
       <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
     </ul>
   </section>
@@ -89,15 +110,25 @@
       <h3 itemprop="jobTitle">Lead Web Developer</h3>
 
       <!-- worksFor is valid on Person -->
-      <div itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+      <div
+        itemprop="worksFor"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
         <span itemprop="name">Company Name 1</span>
         <span>February 2010 - Present</span>
 
-        <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+        <p itemprop="description">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+        </p>
 
         <span itemprop="location" itemscope itemtype="https://schema.org/Place">
           <a itemprop="url" href="http://link-to-company.com">Company URL</a>
-          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+          >
             <span itemprop="addressLocality">Anywhere,USA</span>
           </span>
         </span>
@@ -108,12 +139,20 @@
     <article class="job">
       <h3 itemprop="jobTitle">Senior Developer</h3>
 
-      <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+      <span
+        itemprop="worksFor"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
         <span itemprop="name">Company Name 2</span>
 
         <span itemprop="location" itemscope itemtype="https://schema.org/Place">
           <a itemprop="url" href="http://link-to-company.com">Company URL</a>
-          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+          >
             <span itemprop="addressLocality">Anywhere,USA</span>
           </span>
         </span>
@@ -125,18 +164,28 @@
         <span>February 2009</span>
       </div>
 
-      <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+      <p itemprop="description">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+      </p>
     </article>
 
     <article class="job">
       <h3 itemprop="jobTitle">Senior Developer</h3>
 
-      <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+      <span
+        itemprop="worksFor"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
         <span itemprop="name">Company Name 2</span>
 
         <span itemprop="location" itemscope itemtype="https://schema.org/Place">
           <a itemprop="url" href="http://link-to-company.com">Company URL</a>
-          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+          >
             <span itemprop="addressLocality">Anywhere,USA</span>
           </span>
         </span>
@@ -147,24 +196,44 @@
         <span>February 2009</span>
       </div>
 
-      <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+      <p itemprop="description">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+      </p>
     </article>
   </section>
 
   <section id="education">
     <h2>Education</h2>
 
-    <article class="certificate" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-      <h3 itemprop="description"><abbr title="Associates of Science">AS</abbr> Technology and Engineering</h3>
+    <article
+      class="certificate"
+      itemprop="alumniOf"
+      itemscope
+      itemtype="https://schema.org/EducationalOrganization"
+    >
+      <h3 itemprop="description">
+        <abbr title="Associates of Science">AS</abbr> Technology and Engineering
+      </h3>
       <span itemprop="name">University of Arkansas at Pulaski Tech</span>
-      <span itemprop="location" itemscope>3000 West Scenic Drive, North Little Rock, AR 72113</span>
+      <span itemprop="location" itemscope
+        >3000 West Scenic Drive, North Little Rock, AR 72113</span
+      >
       <span>2022-2024</span>
     </article>
 
-    <article class="certificate" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-      <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Computer Science</h3>
+    <article
+      class="certificate"
+      itemprop="alumniOf"
+      itemscope
+      itemtype="https://schema.org/EducationalOrganization"
+    >
+      <h3 itemprop="description">
+        <abbr title="Master of Science">BA</abbr> Computer Science
+      </h3>
       <span itemprop="name">University of Arkansas at Little Rock</span>
-      <span itemprop="location" itemscope>2801 S. University Ave., Little Rock, AR 72204</span>
+      <span itemprop="location" itemscope
+        >2801 S. University Ave., Little Rock, AR 72204</span
+      >
       <span>2024-2026</span>
     </article>
   </section>
@@ -172,8 +241,5 @@
 
 <!-- Footer -->
 <footer>
-  <div id="copyright">
-    &copy; 2026 Name | <a href="#top">Top</a>
-  </div>
+  <div id="copyright">&copy; 2026 Name | <a href="#top">Top</a></div>
 </footer>
- 
