@@ -2,6 +2,12 @@ nav{
     background: #BBBBBB;
 }
 
+header{
+    height: 10vh;
+    background: url(../img/mbBanner.jpg);
+    background-size: 100% 100%;
+}
+
 body{
     background-color: #444444;
     color: #BBBBBB
