@@ -1,0 +1,119 @@
+nav {
+  background-color: #bbbbbb;
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  background: url(../img/mbBanner.jpg);
+  background-size: 100% 100%;
+  justify-content: center;
+  padding-top: 2.5vh;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #444444;
+  color: #bbbbbb;
+}
+
+article {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #bbbbbb;
+  color: black;
+  .metals {
+    #physical,
+    #mental {
+      text-align: center;
+      margin: 5px;
+      background-color: #aaaaaa;
+    }
+  }
+  .misting {
+    background-color: #aaaaaa;
+  }
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+.gap {
+  margin-bottom: 5px;
+}
+
+.plot {
+  grid-area: plot;
+}
+.characters {
+  grid-area: characters;
+}
+.magic {
+  grid-area: magic;
+}
+
+.content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    "plot "
+    "characters"
+    "magic";
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "plot plot"
+      "characters characters"
+      "magic magic";
+  }
+  .gap {
+    margin-bottom: 0;
+  }
+  .character {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "vin kelsier"
+      "elend sazed";
+  }
+  .metals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "physical mental";
+  }
+  #vin {
+    grid-area: vin;
+  }
+  #kelsier {
+    grid-area: kelsier;
+  }
+  #elend {
+    grid-area: elend;
+  }
+  #sazed {
+    grid-area: sazed;
+  }
+  #physical {
+    grid-area: physical;
+  }
+  #mental {
+    grid-area: mental;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "plot characters"
+      "magic magic";
+  }
+}
