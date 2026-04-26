@@ -1,0 +1,104 @@
+.plot {
+  grid-area: plot;
+}
+
+.themes {
+  grid-area: themes;
+}
+
+.plot-points {
+  grid-area: plot-points;
+}
+
+.key-characters {
+  grid-area: key-characters;
+}
+#char1 {
+    grid-area: char1;
+  }
+#char2 {
+  grid-area: char2;
+}
+#char3 {
+  grid-area: char3;
+}
+#char4 {
+  grid-area: char4;
+}
+#char5 {
+  grid-area: char5;
+}
+#char6 {
+  grid-area: char6;
+}
+#theme1 {
+  grid-area: theme1;
+}
+#theme2 {
+  grid-area: theme2;
+}
+#theme3 {
+  grid-area: theme3;
+}
+#theme4 {
+  grid-area: theme4;
+}
+
+.content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    "plot"
+    "themes"
+    "plot-points"
+    "key-characters";
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "plot plot"
+      "themes themes"
+      "plot-points plot-points"
+      "key-characters key-characters";
+  }
+
+  .character {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "char1 char2"
+      "char3 char4"
+      "char5 char6";
+  }
+  
+  .theme {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "theme1 theme2"
+      "theme3 theme4";
+  }
+}
+
+@media screen and (min-width: 992px){
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "plot themes"
+      "plot-points plot-points"
+      "key-characters key-characters";
+  }
+
+  .character{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "char1 char2 char3"
+    "char4 char5 char6";
+  }
+
+}

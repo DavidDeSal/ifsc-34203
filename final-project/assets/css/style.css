@@ -55,6 +55,7 @@ h2 {
   grid-area: magic;
 }
 
+
 .content {
   display: grid;
   gap: 10px;
@@ -64,6 +65,8 @@ h2 {
     "characters"
     "magic";
 }
+
+
 
 @media screen and (min-width: 768px) {
   .content {
