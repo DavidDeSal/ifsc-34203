@@ -1,17 +1,18 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-/* Fix Clearing Bugs */
 
+/* Fix Clearing Bugs */
 .cf:before,
 .cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+  content: " ";
+  display: table;
 }
 
 .cf:after {
@@ -19,20 +20,97 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #fff;
-  background-color: black;
-  background-image: url(../img/home-bg1.jpg);
+  background-color: #111;
+  background-image: url("../img/home-bg1.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
-header {
-  text-align: center;
- }
 
-@media screen and (min-width: 600px) and (max-width: 800px) {
-  body {
-    color: black;
-    background-color: red;
+header{ 
+  text-align: center;
+  padding: 50px 20px 30px;
+
+  h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  }
+
+  h2 {
+  margin: 10px 0 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #ddd;
+  }
+}
+
+nav {
+  width: 70%;
+  margin: 0 auto 50px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav > ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+nav a,
+nav > ul > li {
+  display: block;
+  padding: 14px;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
+}
+
+nav li ul {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+nav li ul a {
+  padding: 10px 14px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.grid-lab {
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 768px) {
+  nav > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav > ul {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
