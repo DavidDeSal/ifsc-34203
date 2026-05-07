@@ -20,6 +20,7 @@ header {
   background-size: 100% 100%;
   justify-content: center;
   padding-top: 2.5vh;
+  text-align: center;
 }
 
 body {
@@ -47,7 +48,28 @@ article {
   }
 }
 
-h1,
+.char-card {
+  display: flex;
+}
+
+.char-text {
+  flex: 1;
+  strong {
+    display: block;
+  }
+}
+
+.char-img{
+  width: 15%;
+  height: 10vh;
+  object-fit: fill;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 5px;
+}
+
+
 h2 {
   text-align: center;
 }
@@ -86,6 +108,17 @@ h2 {
       "characters characters"
       "magic magic";
   }
+
+  .char-card {
+    flex-direction: column;
+  }
+
+  .char-img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .gap {
     margin-bottom: 0;
   }
